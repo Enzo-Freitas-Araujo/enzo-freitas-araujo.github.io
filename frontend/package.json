@@ -1,0 +1,42 @@
+{
+  "name": "um-react",
+  "homepage": "https://mlutegar.github.io/fablab-mvp-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
+    "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
+    "build": "webpack --mode production --stats-error-details"
+  },
+  "author": "@EduardoMangeli",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.19.0",
+    "firebase": "^10.6.0",
+    "gh-pages": "^6.3.0",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "styled-components": "^6.1.1",
+    "tldraw": "^5.2.5",
+    "tone": "^15.1.22",
+    "wavesurfer.js": "^7.12.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^7.1.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
