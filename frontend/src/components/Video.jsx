@@ -9,7 +9,7 @@ export default function Video(props)
     const navigate = useNavigate();
     const [pause, setPause] = useState(0);
     const [ended, setEnded] = useState(0);
-    const APIacao = "http://127.0.0.1:8000/api/acoes/"
+    const APIacao = "https://enzo-freitas-araujogithubio-production.up.railway.app/api/acoes/"
     const idUsuario = JSON.parse(localStorage.getItem("idUsuario"))
     const idSessao = JSON.parse(localStorage.getItem("idSessao"))
     const [tempoReacao, setTempoReacao] = useState(Date.now())

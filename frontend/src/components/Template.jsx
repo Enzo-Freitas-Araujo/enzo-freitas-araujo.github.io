@@ -13,7 +13,7 @@ export default function Template(props)
     const idSessao = JSON.parse(localStorage.getItem("idSessao"))
     const [tempoReacao, setTempoReacao] = useState(Date.now())
     const [tempoResposta, setTempoResposta] = useState(Date.now())
-    const APIacao = "http://127.0.0.1:8000/api/acoes/";
+    const APIacao = "https://enzo-freitas-araujogithubio-production.up.railway.app/api/acoes/";
 
     function Option1()
     {

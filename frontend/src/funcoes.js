@@ -17,12 +17,12 @@ export async function login(API, dado, navigate, paginaDeDestino)
         const usuarioEncontrado = dados.find(user => user.nome === dado.nome);
         if(usuarioEncontrado != undefined)
         {
-            post("http://127.0.0.1:8000/api/sessoes/", {usuario_id: usuarioEncontrado.id, usuario_nome: usuarioEncontrado.nome}, navigate, paginaDeDestino)
+            post("https://enzo-freitas-araujogithubio-production.up.railway.app/api/sessoes/", {usuario_id: usuarioEncontrado.id, usuario_nome: usuarioEncontrado.nome}, navigate, paginaDeDestino)
         }
         else
         {
             const dados_usuario = post(API, dado)
-            post("http://127.0.0.1:8000/api/sessoes/", {usuario_id: dados_usuario.id, usuario_nome: dados_usuario.nome}, navigate, paginaDeDestino)
+            post("https://enzo-freitas-araujogithubio-production.up.railway.app/sessoes/", {usuario_id: dados_usuario.id, usuario_nome: dados_usuario.nome}, navigate, paginaDeDestino)
         }
         
         return dados; // Retorna os dados para onde você precisar

@@ -4,7 +4,7 @@ import { login } from "./../funcoes.js"
 
 export default function Home()
 {
-    const API = "http://127.0.0.1:8000/api/usuarios"
+    const API = "https://enzo-freitas-araujogithubio-production.up.railway.app/api/usuarios"
     const navigate = useNavigate();
 
     useEffect(() => {localStorage.clear()}, [])

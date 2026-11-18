@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
     "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
-    "build": "webpack --mode production --stats-error-details"
+    "build": "webpack --mode production --stats-error-details",
+    "start": "npx serve -s build -l ${PORT:-3000}"
   },
   "author": "@EduardoMangeli",
   "license": "MIT",
@@ -22,6 +23,7 @@
     "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
+    "serve": "^14.2.8",
     "styled-components": "^6.1.1",
     "tldraw": "^5.2.5",
     "tone": "^15.1.22",
