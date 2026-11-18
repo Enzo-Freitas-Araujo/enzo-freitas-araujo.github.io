@@ -14,10 +14,10 @@
 */
 
   --primaria: #000000;
-  --background: #B9D2FF;
-  --secundaria: #B9D2FF;
-  --destaque: #B9D2FF;
-  --detalhe:#B9D2FF;
+  --background: #000000;
+  --secundaria: #000000;
+  --destaque: #000000;
+  --detalhe:#000000;
 
 /* borda vermelha em todos os elementos para debug */
 /** {
@@ -56,4 +56,17 @@ html {
   height: 100vh;
 
   overflow: hidden; 
+}
+
+button
+{
+  border: 2px solid;
+  border-color: #ffadf8;
+  font-family: Roboto;
+  font-size: 25px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background: #B9D2FF;
+  color:black
 }

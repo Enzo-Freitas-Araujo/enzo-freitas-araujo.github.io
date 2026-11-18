@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router-dom"
-import Template from "./../components/Template"
+import Video from "./../components/Video.jsx"
 
-export default function Tela4()
+export default function Tela1()
 {
-    return(<Template text="ola" reply1="batata" reply2="cenoura" page1="Tela5" page2="Video3" option1="Sim" option2="Não"/>)
+    return(<Video fonte="/videos/Tela5.mp4" page="Tela6" atual="Tela5" Etapa={2}></Video>)
 }
