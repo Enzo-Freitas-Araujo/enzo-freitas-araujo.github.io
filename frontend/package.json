@@ -1,6 +1,6 @@
 {
   "name": "um-react",
-  "homepage": "https://mlutegar.github.io/fablab-mvp-front",
+  "homepage": "hackathon-frontend-production-baf538e6.up.railway.app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
     "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
     "build": "webpack --mode production --stats-error-details",
-    "start": "npx serve -s build -l ${PORT:-3000}"
+    "start": "npx serve --single --listen tcp://0.0.0.0:${PORT:-3000} build"
   },
   "author": "@EduardoMangeli",
   "license": "MIT",
